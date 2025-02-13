@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 10;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+nav {
+  background-color: #bcbcbc;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 7rem;
+}
+
+.item {
+  text-decoration: none;
+  font-size: 1.24rem;
+  color: #fff;
+  font-weight: bold;
+  margin: 3rem;
+  text-transform: uppercase;
+  position: relative;
+  padding: 10px 10px;
+}
+
+.item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3px;
+  background: #eb6d08;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.item:hover::after {
+  transform: scaleX(1);
+  color: #fff;
+}
+
+.logo {
+  padding: 20px;
+}
+
+.paginaInicial {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30rem;
+  align-items: center;
+  background-color: #eee8e4;
+  height: 49.95rem;
+}
+
+.about {
+  margin-left: 6rem;
+}
+
+.about h3 {
+  font-size: 26px;
+  font-weight: 300;
+  color: #eb6d08;
+  text-transform: uppercase;
+}
+
+.about h1 {
+  color: #fff;
+  font-size: 68px;
+}
+
+.about p {
+  padding-top: 0.5rem;
+  padding-bottom: 1.5rem;
+  color: #fff;
+}
+
+.btn {
+  display: inline-block;
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid #eb6d08;
+  border-radius: 20px;
+  background: linear-gradient(135deg, transparent 50%, rgba(235, 109, 8, 0.2));
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn h2 {
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #eb6d08;
+  transition: color 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background: #eb6d08;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 6px 12px rgba(235, 109, 8, 0.3);
+  transform: translateY(-2px);
+}
+
+.btn:hover h2 {
+  color: #fff;
+}
+
+.btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(235, 109, 8, 0.3);
+}
