@@ -116,3 +116,209 @@ nav {
   transform: translateY(0);
   box-shadow: 0 2px 4px rgba(235, 109, 8, 0.3);
 }
+
+.info {
+  margin-left: 20rem;
+  margin-top: -7rem;
+  grid-column: 1;
+}
+
+.more {
+  grid-column: 2;
+  grid-row: 1;
+  align-content: center;
+}
+
+.redessociais {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  gap: 5rem;
+}
+
+.icon img {
+  width: 40px;
+}
+
+.circle-image {
+  padding-left: 19rem;
+  padding-top: 13rem;
+}
+
+.circle-image img {
+  border: 5px solid #eb6d08;
+  border-radius: 50%;
+  padding: 0.25rem;
+}
+
+.sobre h2 {
+  font-size: 3rem;
+  margin-left: -6rem;
+  padding: 30px;
+  margin-top: -2rem;
+}
+
+.sobre {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.title {
+  font-size: 36px;
+  text-transform: uppercase;
+  margin-top: 16rem;
+}
+
+.more p {
+  font-size: 26px;
+  text-align: justify;
+  padding-right: 11rem;
+  padding-top: 3rem;
+  line-height: 3rem;
+}
+
+/* ... (mantenha todos os estilos existentes) ... */
+
+/* ========== MEDIA QUERIES ========== */
+@media (max-width: 1200px) {
+  .paginaInicial {
+    gap: 10rem;
+    padding: 2rem;
+  }
+
+  .circle-image {
+    padding-left: 10rem;
+  }
+
+  .more p {
+    padding-right: 5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .paginaInicial {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    height: auto;
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+
+  .about {
+    margin-left: 0;
+    order: 2;
+  }
+
+  .img {
+    margin: 0 auto;
+    order: 1;
+    max-width: 500px;
+    width: 100%;
+  }
+
+  .sobre {
+    grid-template-columns: 1fr;
+    padding: 2rem;
+  }
+
+  .circle-image {
+    padding: 0;
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .info {
+    margin: 2rem 0;
+    text-align: center;
+  }
+
+  .more {
+    grid-column: 1;
+    text-align: center;
+  }
+
+  .more p {
+    padding-right: 0;
+    font-size: 1.2rem;
+    line-height: 1.8;
+  }
+
+  .title {
+    margin-top: 2rem;
+  }
+
+  .redessociais {
+    justify-content: center;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    height: auto;
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .itens {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+
+  .item {
+    margin: 0.5rem;
+    font-size: 1rem;
+  }
+
+  .about h1 {
+    font-size: 2.5rem;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .sobre h2 {
+    font-size: 2rem;
+    margin-left: 0;
+    padding: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .paginaInicial {
+    padding: 2rem 1rem;
+  }
+
+  .about h1 {
+    font-size: 2rem;
+  }
+
+  .about h3 {
+    font-size: 1.2rem;
+  }
+
+  .about p {
+    font-size: 0.9rem;
+  }
+
+  .more p {
+    font-size: 1rem;
+  }
+
+  .circle-image img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .redessociais {
+    gap: 1.5rem;
+  }
+
+  .icon img {
+    width: 30px;
+  }
+}
