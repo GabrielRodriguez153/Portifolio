@@ -1,5 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #eb6d08;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d45f07;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,13 +30,19 @@
   font-family: "Montserrat", sans-serif;
 }
 
+body {
+  background-color: #fff5e4;
+}
+
 nav {
-  background-color: #bcbcbc;
+  background-color: #000;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
   height: 7rem;
+  position: fixed;
+  width: 100%;
 }
 
 .itens {
@@ -38,7 +67,7 @@ nav {
   bottom: 0;
   width: 100%;
   height: 3px;
-  background: #eb6d08;
+  background: orangered;
   transform: scaleX(0);
   transition: transform 0.3s ease;
 }
@@ -56,8 +85,10 @@ nav {
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
   align-items: center;
-  background-color: #eee8e4;
-  padding: 4rem 2rem;
+  background-image: url("../imgs/fundo1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 12rem 2rem;
 }
 
 .about {
@@ -67,19 +98,20 @@ nav {
 .about h3 {
   font-size: 26px;
   font-weight: 300;
-  color: #eb6d08;
+  color: #fff;
   text-transform: uppercase;
 }
 
 .about h1 {
-  color: #333;
+  color: orangered;
   font-size: 68px;
 }
 
 .about p {
   padding-top: 0.5rem;
   padding-bottom: 1.5rem;
-  color: #333;
+  color: #fff;
+  font-size: 1.2rem;
 }
 
 .btn {
@@ -87,7 +119,7 @@ nav {
   width: 300px;
   padding: 20px;
   text-align: center;
-  border: 2px solid #eb6d08;
+  border: 2px solid orangered;
   border-radius: 20px;
   background: linear-gradient(135deg, transparent 50%, rgba(235, 109, 8, 0.2));
   transition: all 0.3s ease-in-out;
@@ -97,29 +129,31 @@ nav {
 .btn h2 {
   font-weight: 500;
   text-transform: uppercase;
-  color: #eb6d08;
+  color: #fff;
 }
 
 .btn:hover {
-  background: #eb6d08;
-  color: #fff;
+  background: orangered;
   cursor: pointer;
 }
 
 .btn:hover h2 {
   color: #fff;
+  font-weight: bold;
+  transition: all 0.2s;
 }
 
 .img {
   max-width: 100%;
   height: auto;
+  padding-left: 8rem;
 }
 
 .sobre {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
-  padding: 4rem 2rem;
+  padding: 8rem 2rem;
 }
 
 .circle-image {
@@ -136,6 +170,7 @@ nav {
 
 .info {
   text-align: center;
+  margin-left: -8rem;
 }
 
 .redessociais {
@@ -153,26 +188,32 @@ nav {
 
 .more {
   text-align: justify;
-  grid-column: 1;
-  grid-row: 2;
+  grid-column: 2;
+  grid-row: 1;
+  margin-right: 8rem;
 }
 
 .info h2 {
   font-size: 2rem;
+  padding-top: 2rem;
 }
 
 .more p {
-  font-size: 1.3rem;
+  font-size: 1.7rem;
   padding-top: 3rem;
   line-height: 1.8;
 }
 
-.more h3{
+.more h3 {
   text-transform: uppercase;
   font-size: 2rem;
 }
 
 @media (max-width: 992px) {
+  nav {
+    position: fixed;
+  }
+
   .paginaInicial {
     grid-template-columns: 1fr;
     text-align: center;
@@ -191,6 +232,22 @@ nav {
     margin-bottom: 2rem;
   }
 
+  .img {
+    padding-left: 11rem;
+  }
+
+  .info {
+    grid-row: 1;
+    grid-column: 1;
+    margin-left: 0rem;
+  }
+
+  .more {
+    grid-row: 2;
+    grid-column: 1;
+    margin-right: 0rem;
+  }
+
   .more p {
     padding: 0 1rem;
   }
@@ -198,9 +255,10 @@ nav {
 
 @media (max-width: 768px) {
   nav {
-    flex-direction: column;
+    flex-direction: row;
     height: auto;
     padding: 1rem;
+    position: relative;
   }
 
   .itens {
@@ -217,6 +275,14 @@ nav {
     width: 100%;
     max-width: 300px;
   }
+
+  .sobre {
+    padding: 1rem 2rem;
+  }
+
+  .more p {
+    font-size: 1.475rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -224,8 +290,13 @@ nav {
     font-size: 2rem;
   }
 
+  .img {
+    padding-left: 0;
+    padding-top: 1rem;
+  }
+
   .about h3 {
-    font-size: 1.2rem;
+    font-size: 0.75rem;
   }
 
   .about p {
@@ -235,4 +306,145 @@ nav {
   .more p {
     font-size: 1rem;
   }
+}
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1000;
+}
+
+.hamburger-line {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: orangered;
+  margin: 5px 0;
+  transition: 0.3s;
+}
+
+.hamburger.active .hamburger-line:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active .hamburger-line:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .hamburger-line:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -6px);
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .itens {
+    position: fixed;
+    top: 6rem;
+    right: -100%;
+    width: 100%;
+    height: calc(100vh - 7rem);
+    background: rgba(188, 188, 188, 0.98);
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    transition: 0.3s;
+    z-index: 999;
+  }
+
+  .itens.active {
+    right: 0;
+  }
+
+  .item {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+}
+
+.titleP {
+  text-align: center;
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  width: 449px;
+  background-color: #d9d9d9;
+  height: 589px;
+  margin-left: 2rem;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.image-card {
+  background-color: #757575;
+  width: 420px;
+  height: 254px;
+  border-radius: 15px;
+  position: relative;
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+.card-title {
+  font-size: 1.4rem;
+  color: #fff;
+  text-transform: uppercase;
+  padding-left: 1rem;
+}
+
+.card-info {
+  padding-left: 1rem;
+  text-align: justify;
+  font-size: 1.2rem;
+  padding-right: 1rem;
+  margin-top: -1rem;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.logo-deco {
+  background-color: transparent;
+  width: 56px;
+  height: 49.96px;
+}
+
+.button-card {
+  width: 333px;
+  height: 40px;
+  background-color: #b0b0b0;
+  text-align: center;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.button-card:hover {
+  background-color: #757575;
+  transition: all 0.5s;
+}
+
+.button-card a:hover {
+  color: white;
+  transition: all 0.5s;
+}
+
+.button-card a {
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+  font-weight: 700;
 }
