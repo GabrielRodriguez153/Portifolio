@@ -57,4 +57,4 @@ Entre em contato comigo através dos seguintes canais:
 ### Formas de Contato:
 - **LinkedIn:** Mensagem direta pela plataforma
 - **GitHub:** Abertura de issues em repositórios
-- **E-mail profissional:** gabrielh.salles@outlook.com*
+- **E-mail profissional:** gabrielh.salles@outlook.com
