@@ -1,45 +1,60 @@
-Meu Portfólio Online
+# Portfólio Online - Gabriel Henrique
 
-Bem-vindo ao repositório do meu portfólio online! Aqui você encontra detalhes sobre minha trajetória, projetos e habilidades como desenvolvedor.
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin)](https://www.linkedin.com/in/gabrielhrodriguez/)
+[![GitHub](https://img.shields.io/badge/GitHub-Follow-black?logo=github)](https://github.com/GabrielRodriguez153)
 
-Sobre o Projeto
+![Preview](imgs/Imagem.png)
 
-Este portfólio foi criado para apresentar meus projetos, experiências e conhecimentos adquiridos ao longo da minha jornada. O site é responsivo, dinâmico e foi desenvolvido utilizando as seguintes tecnologias:
+> **Portfólio profissional** desenvolvido para mostrar habilidades, projetos e experiências como Desenvolvedor Full-Stack.
 
-Front-end: HTML, CSS, JavaScript
+---
 
-Funcionalidades
+## 🚀 Sobre o Projeto
 
-Exibição de projetos desenvolvidos
+### Objetivo
+Apresentar de forma clara e moderna:
+- Perfil profissional
+- Habilidades técnicas
+- Projetos desenvolvidos
+- Canais de contato
 
-Seção sobre mim e minha experiência
+### Tecnologias Utilizadas
+- **Frontend:** HTML5, CSS3, JavaScript
+- **Ferramentas:** SVG para ícones, Layout Responsivo
+- **Design:** Navegação intuitiva com menu hamburguer
 
-Links para redes sociais e contato
+---
 
-Download de currículo
+## ✨ Funcionalidades Principais
 
-Navegação responsiva com menu dinâmico
+### Seções do Portfólio
+1. **Home**  
+   - Apresentação pessoal
+   - Botão para download do currículo (em desenvolvimento)
 
-Como Visualizar o Projeto
+2. **Sobre**  
+   - Foto de perfil
+   - Formação acadêmica (5º semestre de DSM na FATEC Registro)
+   - Redes sociais (LinkedIn, GitHub)
 
-Clone este repositório ou faça o download dos arquivos:
+3. **Projetos**  
+   - Cards para exibição de trabalhos (em construção)
+   - Links para repositórios
 
-git clone https://github.com/GabrielRodriguez153/portfolio.git
+4. **Skills** *(a implementar)*  
+5. **Contato** *(a implementar)*
 
-Abra o arquivo index.html no seu navegador.
+---
 
-(Opcional) Utilize uma extensão ou ferramenta de servidor local, como o Live Server, para visualizar as alterações em tempo real.
+## 📬 Contato
 
-Contato
+Entre em contato comigo através dos seguintes canais:
 
-Caso tenha alguma dúvida ou sugestão, fique à vontade para entrar em contato:
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Gabriel_Henrique-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/gabrielhrodriguez/)
+[![GitHub](https://img.shields.io/badge/GitHub-GabrielRodriguez153-181717?style=for-the-badge&logo=github)](https://github.com/GabrielRodriguez153)
+[![Email](https://img.shields.io/badge/Email-Contato_Profissional-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:gabrielh.salles@outlook.com)
 
-E-mail: gabrielhenrique@example.com
-
-LinkedIn: linkedin.com/in/gabrielhrodriguez
-
-GitHub: github.com/GabrielRodriguez153
-
-Portfólio Online: seusite.com
-
-Obrigado por visitar meu portfólio! 😊
+### Formas de Contato:
+- **LinkedIn:** Mensagem direta pela plataforma
+- **GitHub:** Abertura de issues em repositórios
+- **E-mail profissional:** gabrielh.salles@outlook.com*
